@@ -58,7 +58,7 @@
   align-items: center;
   height: 100%;
 }
-.project {
+.project-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,12 +68,12 @@
   margin-bottom: 30px;
   text-align: center;
 }
-.project img {
+.project-tile img {
   max-width: 280px;
   height: auto;
   margin-left: 2px;
 }
-.project:hover span {
+.project-tile:hover span {
   transition: 0.5s;
   color: #75b1ae;
 }
@@ -83,8 +83,7 @@ span {
 }
 
 p,
-h1,
-a {
+h1 {
   background-color: transparent;
 }
 a {
@@ -102,8 +101,17 @@ footer {
   margin-top: 30px;
   font-size: 30px;
 }
+#footer-links i {
+  padding: 10px;
+}
 .footer-link:hover {
   transition: 0.5s;
   border-bottom: 5px solid #75b1ae;
   transform: translateY(5px);
+}
+
+@media (max-width: 480px) {
+  #footer-links p {
+    color: transparent;
+  }
 }
